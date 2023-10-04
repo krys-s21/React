@@ -7,6 +7,8 @@ import UseReducer from './useReducer';
 import UseRef from './useRef';
 import UseState from './useState';
 import CustomHook from './customHook';
+import FetchingData from './fetchingData';
+import DisplayingData from './displayingData';
 
 function App() {
   return (
@@ -25,6 +27,12 @@ function App() {
       </Link>
       <Link style={{ display: 'block' }} to="/customHook">
         Custom Hook
+      </Link>
+      <Link style={{ display: 'block' }} to="/fetchingData">
+        Fetching Data
+      </Link>
+      <Link style={{ display: 'block' }} to="/displayingData">
+        Displaying Data
       </Link>
       <div style={{ marginTop: '20px', marginBottom: '5px' }}>
         Useful links:
@@ -45,6 +53,8 @@ function App() {
         <Route path="/useRef" element={<UseRef />} />
         <Route path="/useState" element={<UseState />} />
         <Route path="/customHook" element={<CustomHook />} />
+        <Route path="/fetchingData" element={<FetchingData />} />
+        <Route path="/displayingData" element={<DisplayingData />} />
       </Routes>
     </BrowserRouter>
   );
