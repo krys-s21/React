@@ -11,7 +11,7 @@ function UseState() {
     setColor('#000000');
   };
   return (
-    <div className="reducer">
+    <div className="state">
       <h1>useState</h1>
       <form onSubmit={submit}>
         <input

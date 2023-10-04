@@ -13,7 +13,7 @@ function UseRef() {
     hexColor.current.value = '';
   };
   return (
-    <div className="reducer">
+    <div className="ref">
       <h1>useRef</h1>
       <form onSubmit={submit}>
         <input ref={txtTitle} type="text" placeholder="color title..." />
