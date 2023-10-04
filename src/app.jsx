@@ -9,6 +9,9 @@ import UseState from './useState';
 import CustomHook from './customHook';
 import FetchingData from './fetchingData';
 import DisplayingData from './displayingData';
+import Loading from './loading';
+import GraphQL from './graphQL';
+import RenderProps from './renderProps';
 
 function App() {
   return (
@@ -34,6 +37,15 @@ function App() {
       <Link style={{ display: 'block' }} to="/displayingData">
         Displaying Data
       </Link>
+      <Link style={{ display: 'block' }} to="/loading">
+        Loading
+      </Link>
+      <Link style={{ display: 'block' }} to="/graphQL">
+        Fetching using GraphQL
+      </Link>
+      <Link style={{ display: 'block' }} to="/renderProps">
+        Render Props
+      </Link>
       <div style={{ marginTop: '20px', marginBottom: '5px' }}>
         Useful links:
         <br />
@@ -55,6 +67,9 @@ function App() {
         <Route path="/customHook" element={<CustomHook />} />
         <Route path="/fetchingData" element={<FetchingData />} />
         <Route path="/displayingData" element={<DisplayingData />} />
+        <Route path="/loading" element={<Loading />} />
+        <Route path="/graphQL" element={<GraphQL />} />
+        <Route path="/renderProps" element={<RenderProps />} />
       </Routes>
     </BrowserRouter>
   );
